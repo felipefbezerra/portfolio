@@ -706,224 +706,124 @@ span {
     animation: showRight 1s ease forwards;
     animation-delay:calc(.3s *var(--i)) ;
 }
-/* Responsividade para telas menores que 1200px */
-@media (max-width: 1200px) {
-    html {
-        font-size: 56%;
-    }
-    .header {
-        padding: 2rem 6%;
-    }
-    .home{
-       min-height: auto;
-        background: none;
-        text-align: center;
-        font-size: 65%;
-        margin-left: 12%;
-    }
-    .btn-box{
-        align-items: center;
-        margin-left: 20%;
-    }
-    .btn-box.btns{
-        align-items: center;
-        margin-right: 20%;
-    }
-    .home-sci{
-        align-items: center;
-        margin-left: 20%;
-    }
-    section {
-        padding: 8rem 6% 2rem;
-    }
-    .footer {
-        padding: 2rem 6%;
-    }
-}
 
-/* Responsividade para telas menores que 991px */
-@media (max-width: 991px) {
-    .header {
-        padding: 2rem 5%;
-    }
-    .home {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem 5%;
-        gap: 2rem; /* Adiciona espaçamento entre elementos */
-    }
-    .home-content {
-        width: 100%;
-    }
-    .btn-box {
-        flex-direction: column;
-        gap: 1.5rem;
-        width: 100%;
-    }
-    .home-sci {
-        justify-content: center;
-        gap: 20px;
-    }
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem 5%;
-    }
-}
-
-/* Responsividade para telas menores que 768px */
+        /* Estilo para tablets (768px ou menos) */
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: var(--bg-color);
-        transition: all 0.3s ease;
-        z-index: 1000;
-    }
-    .navbar.active {
-        left: 0;
-    }
-    .navbar a {
-        font-size: 2rem;
-        margin: 1.5rem 0;
-    }
-    .home-content h1 {
-        font-size: 4rem;
-        line-height: 1.2;
-    }
-    .home-content p {
-        font-size: 1.6rem;
-    }
-    .home-sci {
-        justify-content: center;
-        gap: 20px;
-    }
-    .skills {
-        padding: 4rem 2rem;
-    }
-    .skills-icons {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-}
+  .home {
+    height: auto; /* Ajusta a altura automaticamente */
+    background: none; /* Para que a imagem cubra a área */
+    background-position: center; /* Centraliza a imagem */
+    padding: 5rem 5%; /* Reduz o espaçamento */
+    flex-direction: column; /* Coloca o conteúdo em coluna */
+    text-align: center;
+  }
 
-/* Responsividade para telas menores que 480px */
-@media (max-width: 480px) {
-    html {
-        font-size: 12px; /* Ajuste o tamanho da fonte */
-        height: auto;
-    }
-    .home {
-        min-height: 100vh; /* Ajuste para altura total da tela */
-        background: none;
-        text-align: center;
-        font-size: 1rem;
-        gap: 10px;
-        margin-left: 0; /* Remova margens fixas */
-        margin-right: 0; 
-        height: auto;
-    }
-    .home-content h1 {
-        font-size: 5.2rem;
-    }
-    .home-content h3{
-        text-align: center;
-        font-size: 25px ;
-        margin-top: auto;
-    }
-    .home-content p {
-        font-size: 1.4rem;
-        margin-bottom: 1.5rem;
-    }
-    .btn-box, .home-sci {
-        display: flex;
-        justify-content: center; /* Centraliza os itens */
-        gap: 5px; /* Ajuste o espaço entre os elementos */
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .btn-box {
-        margin-bottom: 5px; /* Menos distância entre o btn-box e home-sci */
-    }
-    .home-sci {
-        margin-top: 5px; /* Menos distância entre o home-sci e o próximo elemento */
-    }
-    .home-sci a {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
-    }
-    .home-sci a {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
-    }
-    .skills {
-        padding: 4rem 2rem;
-        height: auto;
-        text-align: center;
-    }
-    .skills-icons {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    .skills-icons i {
-        font-size: 30px;
-    }
-    .service-container,
-    .portfolio-carousel {
-        flex-direction: column;
-        align-items: center;
+  .home-content {
+    max-width: 100%; /* Usa toda a largura disponível */
+  }
+
+  .home-content h1 {
+    font-size: 3rem; /* Ajusta o tamanho do texto */
+    line-height: 1.2;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 3rem;
+  }
+
+  .btn-box {
+    flex-direction: column; /* Empilha os botões */
+    gap: 1rem; /* Espaço entre os botões */
+    width: auto; /* Ajusta a largura */
+    height: auto;
+  }
+
+  .home-imgHover {
+    display: none; /* Esconde a imagem flutuante */
+  }
+}
+  .skills {
+    padding: 2rem 5%; /* Reduz o padding */
+  }
+
+  .skills-icons {
+    flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha */
+    gap: 2rem; /* Reduz o espaçamento */
+  }
+
+  .skills-icons i, .custom-icon {
+    font-size: 4rem; /* Ajusta o tamanho dos ícones */
+  }
+
+  .custom-icon {
+    width: 4rem; 
+    height: 4rem;
+  }
+    .service-container {
+        flex-direction: column; /* Coloca os itens de serviço em coluna */
         gap: 2rem;
     }
-    .service-item,
-    .portfolio-item {
-        width: 100%;
-    }
 }
-@media (max-width: 371px){
+
+/* Estilo para celulares (480px ou menos) */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 3%;
+    }
+
     .home {
-        justify-content: center;
-    }
-
-    .home-content{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
+        background: none; /* Reduz a imagem de fundo */
+        padding: 2rem 3%;
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 2.4rem;
     }
-}
-/* Responsividade para telas menores que 360px */
-@media (max-width: 360px) {
-    .home-content h1 {
-        font-size: 3rem;
+
+    .home-content h3 {
+        font-size: 1.8rem;
     }
+
     .home-content p {
-        font-size: 1.2rem;
-    }
-    .btn-box a {
         font-size: 1.4rem;
     }
-    .skills-icons i {
-        font-size: 25px;
+
+    .btn-box a {
+        width: 100%; /* Botões ocupam largura total */
     }
-    .footer p {
-        font-size: 1.2rem;
+
+    .service-item {
+        max-width: 100%; /* Itens ocupam a largura total */
+    }
+
+    .about-img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .skills-icons i {
+        font-size: 50px; /* Reduz o tamanho dos ícones */
+    }
+}
+
+/* Adaptação geral */
+@media (max-width: 1024px) {
+    .portfolio-item {
+        flex: 1 1 100%; /* Ocupa largura total */
+        margin-bottom: 2rem;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%; /* Campos ocupam a largura total */
+    }
+
+    .contact form .btn-box.btns .btn {
+        width: 100%;
     }
 }
 @keyframes aboutSpinner {
