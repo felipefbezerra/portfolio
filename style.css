@@ -709,41 +709,61 @@ span {
 
         /* Estilo para tablets (768px ou menos) */
 @media (max-width: 768px) {
-    .header {
-        padding: 15px 5%;
-    }
+  .home {
+    height: auto; /* Ajusta a altura automaticamente */
+    background-size: cover; /* Para que a imagem cubra a área */
+    background-position: center; /* Centraliza a imagem */
+    padding: 5rem 5%; /* Reduz o espaçamento */
+    flex-direction: column; /* Coloca o conteúdo em coluna */
+    text-align: center;
+  }
 
-    .navbar {
-        display: none; /* Esconde o menu padrão */
-    }
+  .home-content {
+    max-width: 100%; /* Usa toda a largura disponível */
+  }
 
-    #menu-icon {
-        display: block; /* Mostra o ícone de menu */
-    }
+  .home-content h1 {
+    font-size: 3rem; /* Ajusta o tamanho do texto */
+    line-height: 1.2;
+  }
 
-    .home {
-        flex-direction: column; /* Ajusta o layout para coluna */
-        text-align: center;
-        padding: 2rem 5%;
-    }
+  .home-content h3 {
+    font-size: 2rem;
+  }
 
-    .home-content {
-        max-width: 100%;
-    }
+  .home-content p {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 3rem;
+  }
 
-    .home-content h1 {
-        font-size: 3.2rem;
-    }
+  .btn-box {
+    flex-direction: column; /* Empilha os botões */
+    gap: 1rem; /* Espaço entre os botões */
+    width: auto; /* Ajusta a largura */
+    height: auto;
+  }
 
-    .home-content h3 {
-        font-size: 2rem;
-    }
+  .home-imgHover {
+    display: none; /* Esconde a imagem flutuante */
+  }
+}
+  .skills {
+    padding: 2rem 5%; /* Reduz o padding */
+  }
 
-    .btn-box {
-        flex-direction: column; /* Ajusta os botões para coluna */
-        gap: 1rem;
-    }
+  .skills-icons {
+    flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha */
+    gap: 2rem; /* Reduz o espaçamento */
+  }
 
+  .skills-icons i, .custom-icon {
+    font-size: 4rem; /* Ajusta o tamanho dos ícones */
+  }
+
+  .custom-icon {
+    width: 4rem; 
+    height: 4rem;
+  }
     .service-container {
         flex-direction: column; /* Coloca os itens de serviço em coluna */
         gap: 2rem;
