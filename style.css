@@ -712,7 +712,6 @@ span {
   .home {
     height: auto; /* Ajusta a altura automaticamente */
     background: none; /* Para que a imagem cubra a área */
-    background-position: center; /* Centraliza a imagem */
     padding: 5rem 5%; /* Reduz o espaçamento */
     flex-direction: column; /* Coloca o conteúdo em coluna */
     text-align: center;
@@ -743,10 +742,6 @@ span {
     height: auto;
   }
 
-  .home-imgHover {
-    display: none; /* Esconde a imagem flutuante */
-  }
-}
   .skills {
     padding: 2rem 5%; /* Reduz o padding */
   }
