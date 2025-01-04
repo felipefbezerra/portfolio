@@ -763,7 +763,7 @@ span {
         flex-direction: column; /* Coloca os itens de serviço em coluna */
         gap: 2rem;
     }
-
+}
 /* Estilo para celulares (480px ou menos) */
 @media (max-width: 480px) {
     .header {
