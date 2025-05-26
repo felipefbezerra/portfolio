@@ -10,179 +10,211 @@
 </head>
 
 <body>
-    <header class="header"> 
-        <a href="#" class="logo">Felipe. <span class="animate" style="--i:1;"></span></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+    <header className="header">
+        <a href="#" className="logo">
+          Felipe. <span className="animate" style={{ '--i': 1 }}></span>
+        </a>
+        <div className="bx bx-menu" id="menu-icon"></div>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Início</a>
-            <a href="#about">Sobre</a>
-            <a href="#service">Serviços</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Trabalhos</a>
-            <a href="#contact">Contato</a>
+        <nav className="navbar">
+          <a href="#home" className="active">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#service">Serviços</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Trabalhos</a>
+          <a href="#contact">Contato</a>
 
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:2;"></span>
+          <span className="active-nav"></span>
+          <span className="animate" style={{ '--i': 2 }}></span>
         </nav>
-    </header>
+      </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1> Olá, sou Felipe F. Bezerra</h1>
-            <div class="text-animate">
-                <h3>Programador & Analista de Dados</h3>
-            </div>
-            <p>Sou um desenvolvedor Full-Stack em formação focado em Python, SQL e tecnologias front-end como HTML, CSS e JavaScript.  
-                Além disso, estou em constante evolução, aprimorando habilidades em cibersegurança e novas tendências tecnológicas. </p>
-            <div class="btn-box">
-                <a href="https://www.linkedin.com/in/felipe-florentino-bezerra/">Contrate Me</a>
-                <a href="#contact">Contate-me!</a>
-            </div>
+      <section className="home" id="home">
+        <div className="home-content">
+          <h1>Olá, sou Felipe F. Bezerra</h1>
+          <div className="text-animate">
+            <h3>Programador & Analista de Dados</h3>
+          </div>
+          <p>
+            Sou um desenvolvedor Full-Stack em formação focado em Python, SQL e
+            tecnologias front-end como HTML, CSS e JavaScript. Além disso,
+            estou em constante evolução, aprimorando habilidades em
+            cibersegurança e novas tendências tecnológicas.
+          </p>
+          <div className="btn-box">
+            <a href="https://www.linkedin.com/in/felipe-florentino-bezerra/">Contrate Me</a>
+            <a href="#contact">Contate-me!</a>
+          </div>
         </div>
 
-        <div class="home-sci">
-            <a href="https://www.instagram.com/felipe.fbezerra/"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.linkedin.com/in/felipe-florentino-bezerra/"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://github.com/felipefbezerra"><i class='bx bxl-github' ></i></a>
+        <div className="home-sci">
+          <a href="https://www.instagram.com/felipe.fbezerra/">
+            <i className="bx bxl-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/felipe-florentino-bezerra/">
+            <i className="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/felipefbezerra">
+            <i className="bx bxl-github"></i>
+          </a>
         </div>
 
-        <span class="home-imgHover"></span>
-    </section>
-    
-    <section class="about" id="about">
-        <h2 class="heading">Sobre <span>Mim</span></h2>
+        <span className="home-imgHover"></span>
+      </section>
 
-        <div class="about-img">
-            <img src="img/me1.jpg" alt="">
-            <span class="circle-spin"></span>
+      <section className="about" id="about">
+        <h2 className="heading">
+          Sobre <span>Mim</span>
+        </h2>
+
+        <div className="about-img">
+          <img src="/img/me1.jpg" alt="Minha Foto" />
+          <span className="circle-spin"></span>
         </div>
 
-        <div class="about-content">
-            <h3>Desenvolvimento Tecnológico</h3>
-            <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, com ênfase nos estudos em Python, Machine Learning e Banco de Dados. 
-                Minha trajetória inclui colaborações em ambientes internacionais, como no ENTER International, e no Instituto Athenas, 
-                onde atuei em projetos voltados para educação e tecnologia. 
-                 Estou sempre em busca de desafios que me permitam aplicar e expandir minhas habilidades, 
-                 com o objetivo de contribuir para a criação de soluções tecnológicas inovadoras e seguras
+        <div className="about-content">
+          <h3>Desenvolvimento Tecnológico</h3>
+          <p>
+            Estudante de Análise e Desenvolvimento de Sistemas,
+            com ênfase nos estudos em Python, Modelagem e Engenharia de Dados. Minha trajetória inclui colaborações em ambientes
+            internacionais, como no ENTER International, Compass UOL, onde atuei em projetos voltados para voltados para a engenharia e gerenciamento de dados.
+             Estou sempre em busca de desafios que me permitam
+            aplicar e expandir minhas habilidades, com o objetivo de contribuir
+            para a criação de soluções tecnológicas inovadoras e seguras
+          </p>
+
+          <div className="skills-floating">
+            <i className="bx bxl-python" title="Python"></i>
+            <i className="bx bxl-html5" title="HTML5"></i>
+            <i className="bx bxl-css3" title="CSS3"></i>
+            <i className="bx bxl-javascript" title="JavaScript"></i>
+            <i className="bx bx-data" title="SQL / Banco de Dados"></i>
+            <i className="bx bxl-git" title="Git"></i>
+            <i className="bx bxl-react" title="React"></i>
+          </div>
+
+          <div className="btn-box btns">
+            <a href="https://www.linkedin.com/in/felipe-florentino-bezerra/" className="btn">
+              Saiba mais
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="service" id="service">
+        <h2 className="heading">
+          Meus <span>Serviços</span>
+        </h2>
+        <div className="service-container">
+          <div className="service-item">
+            <i className="bx bxl-python"></i>
+            <h3>Análise de <br /> Dados</h3>
+            <p>
+              Análise e gerenciamento de banco de dados com foco em eficiência
+              e segurança.
             </p>
-
-            <div class="btn-box btns">
-                <a href="https://www.linkedin.com/in/felipe-florentino-bezerra/" class="btn">Saiba mais</a>
-            </div>
+          </div>
+          <div className="service-item">
+            <i className="bx bxl-html5"></i>
+            <h3>Desenvolvimento Web</h3>
+            <p>
+              Criação de sites funcionais e responsivos com uma experiência de
+              usuário eficiente.
+            </p>
+          </div>
+          <div className="service-item">
+            <i className="bx bx-code-alt"></i>
+            <h3>Desenvolvimento de Sistemas</h3>
+            <p>
+              Desenvolvimento de sistemas personalizados para otimizar
+              processos empresariais.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="service" id="service">
-        <h2 class="heading">Meus <span>Serviços</span></h2>        
-            <div class="service-container">
-                <div class="service-item">
-                    <i class='bx bxl-python'></i>
-                    <h3>Análise de <br> Dados</h3>
-                    <p>Análise e gerenciamento de banco de dados com foco em eficiência e segurança.</p>
-                </div>
-                <div class="service-item">
-                    <i class='bx bxl-html5'></i>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Criação de sites funcionais e responsivos com uma experiência de usuário eficiente.</p>
-                </div>
-                <div class="service-item">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>Desenvolvimento de Sistemas</h3>
-                    <p>Desenvolvimento de sistemas personalizados para otimizar processos empresariais.</p>
-                </div>
-            </div>
-        </section>
-        
-
-    <section class="skills" id="skills">
-        <h2 class="heading">Minhas <span>Habilidades</span></h2>
-            <div class="skills-icons">
-                <i class='bx bxl-python'></i>
-                <i class='bx bxl-html5'></i>
-                <i class='bx bxl-javascript'></i>
-                <i class='bx bxl-css3'></i>
-                <i class='bx bx-data'></i>
-                <i class='bx bxl-trello'></i>
-                <i class='bx bxl-meta'></i>
-                <i class='bx bxl-instagram'></i>
-            </div>
-        
-    </section>
-
-    <section class="portfolio" id="portfolio">
-    <h2 class="heading">Meus <span>Trabalhos</span></h2>
-    <div class="portfolio-carousel">
-        <div class="portfolio-item">
-            <img src="img/musikcitylogo.png" alt="Project 1">
+      <section className="portfolio" id="portfolio">
+        <h2 className="heading">
+          Meus <span>Trabalhos</span>
+        </h2>
+        <div className="portfolio-carousel">
+          <div className="portfolio-item">
+            <img src="/img/musikcitylogo.png" alt="Project 1" />
             <h3>MusikCity</h3>
-            <p>Re-Branding e Prototipagem do Site da Produtora MusikCity para a disciplina de UX/UI Design do curso de ADS</p>
-            <a href="https://felipefbezerra.github.io/musikcity/" target="_blank">Ver Projeto</a>
-        </div>
-        <div class="portfolio-item">
-            <img src="img/task.png" alt="Project 2">
+            <p>
+              Re-Branding e Prototipagem do Site da Produtora MusikCity para a
+              disciplina de UX/UI Design do curso de ADS
+            </p>
+            <a href="https://felipefbezerra.github.io/musikcity/" target="_blank" rel="noreferrer">Ver Projeto</a>
+          </div>
+          <div className="portfolio-item">
+            <img src="/img/task.png" alt="Project 2" />
             <h3>Sistema de Cálculo de Médias de Alunos</h3>
-            <p>Sistema que permite calcular a média de notas de alunos em uma turma, 
-            determinar a média geral da turma, e identificar os alunos com as maiores e menores médias.</p>
-            <a href="https://github.com/felipefbezerra/studentcalc" target="_blank">Ver Projeto</a>
-        </div>
-        <div class="portfolio-item">
-            <img src="img/logoathenas.png" alt="Project 3">
+            <p>
+              Sistema que permite calcular a média de notas de alunos em uma
+              turma, determinar a média geral da turma, e identificar os alunos
+              com as maiores e menores médias.
+            </p>
+            <a href="https://github.com/felipefbezerra/studentcalc" target="_blank" rel="noreferrer">Ver Projeto</a>
+          </div>
+          <div className="portfolio-item">
+            <img src="/img/logoathenas.png" alt="Project 3" />
             <h3>Instituto Athenas</h3>
             <p>Site Institucional do projeto social denominado Instituto Athenas</p>
-            <a href="https://www.institutoathenas.org/" target="_blank">Ver Projeto</a>
+            <a href="https://www.institutoathenas.org/" target="_blank" rel="noreferrer">Ver Projeto</a>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-    
-    <section class="contact" id="contact">
-        <h2 class="heading">Entre em <span>Contato!</span></h2>
+      <section className="contact" id="contact">
+        <h2 className="heading">
+          Entre em <span>Contato!</span>
+        </h2>
 
         <form action="https://formspree.io/f/xeooplow" method="POST">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" name="nome" placeholder="Nome Completo" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="email" name="email" placeholder="Email" required>
-                    <span class="focus"></span>
-                </div>
+          <div className="input-box">
+            <div className="input-field">
+              <input type="text" name="nome" placeholder="Nome Completo" required />
+              <span className="focus"></span>
             </div>
-        
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="tel" name="whatsapp" placeholder="Whatsapp" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" name="assunto" placeholder="Assunto do Email" required>
-                    <span class="focus"></span>
-                </div>
+            <div className="input-field">
+              <input type="email" name="email" placeholder="Email" required />
+              <span className="focus"></span>
             </div>
-        
-            <div class="textarea-field field">
-                <textarea name="mensagem" cols="30" rows="10" placeholder="Sua Mensagem" required class="item" autocomplete="off"></textarea>
-                <span class="focus"></span>
+          </div>
+
+          <div className="input-box">
+            <div className="input-field">
+              <input type="tel" name="whatsapp" placeholder="Whatsapp" required />
+              <span className="focus"></span>
             </div>
-        
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Enviar</button>
+            <div className="input-field">
+              <input type="text" name="assunto" placeholder="Assunto do Email" required />
+              <span className="focus"></span>
             </div>
+          </div>
+
+          <div className="textarea-field field">
+            <textarea name="mensagem" cols="30" rows="10" placeholder="Sua Mensagem" required className="item" autoComplete="off"></textarea>
+            <span className="focus"></span>
+          </div>
+
+          <div className="btn-box btns">
+            <button type="submit" className="btn">Enviar</button>
+          </div>
         </form>
-        
-    </section>
+      </section>
 
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Felipe F. Bezerra | All Rights Reserved.</p>
+      <footer className="footer">
+        <div className="footer-text">
+          <p>&copy; 2025 by Felipe F. Bezerra | All Rights Reserved.</p>
         </div>
 
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
+        <div className="footer-iconTop">
+          <a href="#"><i className="bx bx-up-arrow-alt"></i></a>
         </div>
-    </footer>
+      </footer>
 
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
